@@ -16,6 +16,7 @@ class CorsMiddleware
     public function handle($request, Closure $next)
     {
         $headers = [
+            'Access-Control-Allow-Origin'      => 'http://localhost:3000',
             'Access-Control-Allow-Origin'      => '*',
             'Access-Control-Allow-Credentials' => 'true',
             'Access-Control-Allow-Headers'     => 'Content-Type, Authorization, X-Requested-With'
