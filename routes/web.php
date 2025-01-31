@@ -18,3 +18,7 @@ $router->get('/', function () use ($router) {
 $router->get('/api', function () use ($router) {
     return response()->json(['message' => 'Welcome to the Lumen API']);
 });
+// routes/web.php
+
+$router->post('/register', 'AuthController@register');
+$router->post('/login', 'AuthController@login');
